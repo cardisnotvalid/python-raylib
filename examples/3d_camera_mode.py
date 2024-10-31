@@ -1,4 +1,3 @@
-from ctypes import pointer
 from raylib import *
 
 WINDOW_FACTOR = 100
