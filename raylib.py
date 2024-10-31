@@ -78,8 +78,7 @@ class Vector4(ctypes.Structure):
     )
 
 
-class Quaternion(Vector4):
-    pass
+Vector4 = Quaternion
 
 
 class Matrix(ctypes.Structure):
@@ -132,12 +131,8 @@ class Texture(ctypes.Structure):
     )
 
 
-class Texture2D(Texture):
-    pass
-
-
-class TextureCubemap(Texture):
-    pass
+Texture = Texture2D
+Texture = TextureCubemap
 
 
 class RenderTexture(ctypes.Structure):
@@ -148,8 +143,7 @@ class RenderTexture(ctypes.Structure):
     )
 
 
-class RenderTexture2D(RenderTexture):
-    pass
+RenderTexture = RenderTexture2D
 
 
 class NPatchInfo(ctypes.Structure):
