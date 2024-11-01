@@ -55,7 +55,7 @@ if __name__ == "__main__":
         end_drawing()
 
     unload_texture(texture)
-    unload_model_animations(anims, animsCount)
+    unload_model_animations(anims, anims_count)
     unload_model(model)
 
     close_window()
